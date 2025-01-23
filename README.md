@@ -119,8 +119,4 @@ Contributions are welcome! To contribute:
 
 ---
 
-<<<<<<< HEAD
 salam
-=======
-
->>>>>>> 871e1425461a5cd5bfa15837ed5e8653fcd0e1b8
