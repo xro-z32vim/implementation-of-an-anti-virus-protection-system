@@ -1,25 +1,25 @@
 # implementation-of-an-anti-virus-protection-system
-We will study the process of implementing information security solutions. In the material:      
-You will understand what data is needed to determine the optimal deployment scenario for the implemented system.     
-Get acquainted with the requirements for the implemented system.
 
-# Развёртывание решения, постановка задачи
+    We will study the process of implementing information security solutions. In the material:      
+    You will understand what data is needed to determine the optimal deployment scenario for the implemented system.     
+    Get acquainted with the requirements for the implemented system.
 
-Чтобы с новым пониманием подойти к теме предпроектного обследования и инвентаризации, предлагаем сформулировать постановку задачи. В больших проектах требования к внедряемой системе составляют основу технического задания. Это один из важнейших проектных документов, на основе которого составляются техническое решение, описывающее архитектуру и функционирование системы, и программа испытаний, по итогам которых будет приниматься решение о возможности ввода системы в эксплуатацию.
+# Deploying a solution, setting a task
 
-# Что необходимо для реализации проекта:
+In order to approach the topic of the pre-project survey and inventory with a new understanding, we propose to formulate the task statement. In large projects, the requirements for the implemented system form the basis of the terms of reference. This is one of the most important design documents, on the basis of which a technical solution is drawn up describing the architecture and functioning of the system, and a test program, based on the results of which a decision will be made on the possibility of putting the system into operation.
+What is needed to implement the project:
 
-    Требуется внедрить систему антивирусной защиты в составе:
-        сервера управления;
-        модуля защиты рабочих станций;
-        модуля защиты серверов.
-    Все активы должны быть включены в домен Active Directory.
-    Сервер управления должен работать под управлением OC Microsoft Windows Server.
-    Служебная информация сервера управления должна храниться на выделенном сервере с СУБД PostgreSQL.
-    Сервер управления должен сканировать заданные диапазоны сети и домен на предмет появления новых хостов.
-    ПО антивирусной защиты должно централизованно распространяться с сервера управления на ПК и серверы, которые размещаются в административных группах согласно типу актива.
-    Антивирусные базы, модули и ПО должны обновляться автоматически по расписанию.
-    Для ПК должна быть реализована политика блокировки избранных категорий приложений.
-    Критичные события с подключённых устройств должны храниться в журнале событий сервера управления.
-    На сервере управления должна быть реализована возможность подключения специалиста технической поддержки с правами для просмотра информации об активах и подключения к удалённому рабочему столу. Права на       управление не предоставляются.
-    Критичные события должны отправляться в SIEM для мониторинга событий ИБ в этой инфраструктуре.
+    It is required to implement an antivirus protection system as part of:
+    management servers;
+    workstation protection module;
+    the server protection module.
+    All assets must be included in the Active Directory domain.
+    The management server must be running Microsoft Windows Server OC.
+    The management server's service information must be stored on a dedicated server with a PostgreSQL database management system.
+    The management server must scan the specified network ranges and domain for new hosts.
+    Antivirus protection software should be distributed centrally from the management server to PCs and servers that are located in administrative groups according to the asset type.
+    Antivirus databases, modules, and software should be updated automatically on a schedule.
+    A policy of blocking selected categories of applications should be implemented for the PC.
+    Critical events from connected devices should be stored in the event log of the management server.
+    The management server should be able to connect a technical support specialist with rights to view asset information and connect to a remote desktop. Management rights are not granted.
+    Critical events should be sent to SIEM to monitor information security events in this infrastructure.
