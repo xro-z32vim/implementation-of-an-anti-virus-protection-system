@@ -119,4 +119,10 @@ Contributions are welcome! To contribute:
 
 ---
 
-salam
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📸 Screenshots
+![Dashboard Example](https://via.placeholder.com/800x400)
